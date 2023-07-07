@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color1: #141414;
+  --color2: #fff;
+  --color3: #EC6C37;
+  --color4: black;
+  --color5: black;
+  /* --text-style1:'roboto', serif;
+    --text-style2: 'Poppins', sans-serif; */
+}
+/* Utilities */
+.myContainer {
+  padding: 0 5vw;
+  background-color: var(--color1);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roboto {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 700;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--color2);
+}
+.cabin {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.selectedPage{
+  color: var(--color3)!important;
+}
+.button {
+  text-decoration: none;
+  color: var(--color1);
+  background-color: var(--color2);
+  padding: 1.8vh 1.5vw;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.button::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color3);
+  z-index:-1;
+  transition: 0.7s;
+  transform: scaleX(0);
+  border-radius: 25px;
+}
+
+.button:hover::before {
+  transform: scaleX(100%);
+}
+.button:hover{
+  background-color: transparent;
+  color: var(--color2);
+}
+.button1{
+  padding: 1.8vh 2vw;
+  transition: 2s;
+}
+.button1:hover{
+  transition: 0s;
+  transform: scaleX(100%);
+  color: var(--color2);
+}
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color3);
+  margin-bottom: 5vh;
+}
+
+/* Utilities */
+
+/* navbar */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 12vh;
+  background-color: var(--color1);
+}
+nav a {
+  text-decoration: none;
+}
+nav .logo {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--color2);
+  width: fit-content;
+}
+.logo img{
+  width: 10%;
+}
+.navlink {
+  display: flex;
+  gap: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color2);
+  padding: 1.5vh 2vw;
+  border-radius: 25px;
+  position: relative;
+  transform: translateX(-14vw);
+}
+.navlink p {
+  display: none;
+}
+.mobile {
+  display: none;
+
+  color: var(--color2);
+}
+.mobile a {
+  color: var(--color2);
+}
+.navlink a {
+  color: var(--color1);
+  transition: 0.7s;
+  padding: 0;
+}
+.navlink a:hover {
+  color: var(--color3);
+}
+
+/* navbar End */
+
+/* progressBar */
+.progressBar {
+  width: 100%;
+  height: 0.5vh;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: var(--color3);
+  position: sticky;
+  top: 12vh;
+  left: 0;
+  z-index: 5;
+  max-width: 100%;
+}
+/* progressBar End */
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-around;
+}
+.heroContent {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+}
+.heroContent h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color3);
+}
+.heroContent p {
+  color: var(--color2);
+  margin-bottom: 3.5vh;
+  width: 90%;
+  line-height: 3.5vh;
+}
+.heroIllustraion {
+  width: 40%;
+}
+
+/* Hero Section End*/
+
+/* initiative */
+.initiative{
+  width: 50%;
+}
+.Itext{
+  margin:0 10%;
+  line-height: 4vh;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.intiativeImg{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10vh;
+
+}
+.intiativeImg i{ 
+  font-size: 5rem;
+  margin-bottom: 2vh;
+}
+.intiativeImg p{
+  color: var(--color2);
+}
+  .intiativeImgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+  }
+/* initiative end */
+
+
+/* message By Founder  */
+
+.message {
+  width: 70vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--color1);
+  margin: 0 2.5vw;
+  border-radius: 25px;
+  border: 5px solid var(--color3);
+}
+.messageContent {
+  width: 60%;
+}
+.messageContent h1 {
+  margin-bottom: 2vh;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--color3);
+}
+.messageContent p {
+  margin-bottom: 2vh;
+  line-height: 3.5vh;
+  text-align: left;
+  font-weight: 400;
+  color: var(--color2);
+}
+.messageContent h5 {
+  text-align: left;
+  color: var(--color2);
+}
+.messageContent h5 span {
+  text-align: left;
+  color: var(--color3);
+}
+.messageImage {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.messageImage img {
+  width: 100%;
+  border-radius: 100%;
+}
+/* message by founder end */
+
+/* Footer */
+.footer {
+  min-height: 70vh;
+  background-color: var(--color1);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 7vh;
+}
+/* footer top */
+
+.footerTop h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color2);
+}
+.footerTop p {
+  margin-top: 1vh;
+  font-size: 0.8rem;
+  color: var(--color2);
+  text-align: center;
+}
+.footerTop p a {
+  text-decoration: none;
+  color: var(--color2);
+  font-size: 0.8rem;
+  transition: 0.7s;
+  font-family: "Poppins", sans-serif;
+}
+.footerTop p a:hover {
+  color: var(--color3);
+}
+/* Footer-Mid */
+footer .footerMid {
+  display: flex;
+  justify-content: center;
+}
+.LinkContainer {
+  width: 15vw;
+}
+.footerLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footerHeading {
+  color: var(--color3);
+  font-size: 1.2rem;
+  margin: 1.5vh 0;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+}
+footer a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--color2);
+  font-size: 1rem;
+  margin-bottom: 1vh;
+  transition: 0.7s;
+}
+footer .LinkContainer a:hover {
+  color: var(--color3);
+  transform: translateX(1vw);
+}
+/* Footer-Bottom */
+.footerBottom p {
+  color: var(--color2);
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2vh;
+}
+.footerBottom .social {
+  display: flex;
+  justify-content: center;
+  gap: 2.5vw;
+  color: var(--color2);
+}
+.footerBottom .social a {
+  font-size: 2rem;
+}
+.footerBottom .social a:hover {
+  color: var(--color3);
+  transform: translate3d(1.5px, 1.5px, 1.5px);
+}
+
+/* copyright */
+.copyright {
+  padding: 1vh 0;
+  text-align: center;
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.copyright span {
+  color: var(--color3);
+}
+
+/* Footer End*/
+
+/* Responsive */
+@media (max-width: 900px) {
+  /* Utilities */
+  .button {
+    padding: 1.8vh 3.5vw;
+  }
+  .heading {
+    font-size: 1.8rem;
+  } /* Utilities */
+  /* Navbar */
+  .navlink p {
+    display: block;
+    position: absolute;
+    top: 2vh;
+    right: 7vw;
+    font-size: 1.2rem;
+  }
+
+  .mobile {
+    display: flex;
+    gap: 2vh;
+    font-size: 1.2rem;
+  }
+  .navbtn {
+    display: none;
+  }
+  .navlink {
+    padding: 3vh 2vw;
+    padding-top: 7vh;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    top: 12.4vh;
+    left: 0;
+    flex-direction: column;
+    visibility: hidden;
+    transition: 0.7s;
+    z-index: 2;
+    transform: translateX(0);
+  }
+  /* Hamburger */
+  nav .navlink.active {
+    visibility: visible;
+  }
+  /* Navbar End*/
+  /* Hero */
+  .hero {
+    margin-top: 2.5vh;
+    flex-direction: column;
+  }
+  .heroContent {
+    width: 100%;
+    text-align: center;
+  }
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  .heroContent p {
+    width: 100%;
+  }
+  .heroIllustraion {
+    width: 100%;
+  }
+  /* Hero End */
+
+
+  .Itext {
+    margin: 0 7%;
+    line-height: 3vh;
+    font-size: 1rem;
+    text-align: center;
+}
+.intiativeImg {
+  margin-top: 6vh;
+}
+.intiativeImg i{ 
+  font-size: 3rem;
+}
+  
+  /* Message By Founder  */
+  .message {
+    width: 100%;
+    height: 92vh;
+    margin: 0vh 0vw;
+    flex-direction: column-reverse;
+    
+  }
+  .messageContainer{
+    padding-top: 10vw;
+    padding-bottom: 15vw;
+  }
+  .messageContent {
+    width: 100%;
+    padding: 2vh 5vw;
+    text-align: center;
+    
+  }
+  .messageImage {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .messageContent h1 {
+    margin-bottom: 2vh;
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--color3);
+    text-align: center;
+  }
+  .messageContent p {
+    line-height: 2.5vh;
+    text-align: center;
+  }
+  .messageContent h5 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Message bY Founder End */
+  /* footer */
+  footer {
+    gap: 3vh;
+    margin-top: 2.5vh;
+  }
+  .footer a{
+    margin-bottom: 0.2vh;
+  }
+  .LinkContainer {
+    width: 100%;
+    margin-bottom: 1vh;
+  }
+  footer .footerMid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerBottom .social {
+    gap: 6vw;
+  }
+  /* footer End*/
+}
+
+
+/* Responsiveness */
+@media (min-width:900px) and (max-width: 1150px){
+  .myContainer{
+    padding: 0 20vw;
+  }
+   /* Utilities */
+   .button {
+    padding: 1.8vh 3.5vw;
+  }
+  .heading {
+    font-size: 2rem;
+  } /* Utilities */
+  /* Navbar */
+  .navlink p {
+    display: block;
+    position: absolute;
+    top: 2vh;
+    right: 7vw;
+    font-size: 1.2rem;
+  }
+
+  .mobile {
+    display: flex;
+    gap: 2vh;
+    font-size: 1.2rem;
+  }
+  .navbtn {
+    display: none;
+  }
+  .navlink {
+    padding: 3vh 2vw;
+    padding-top: 7vh;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    top: 12.4vh;
+    left: 0;
+    flex-direction: column;
+    visibility: hidden;
+    transition: 0.7s;
+    z-index: 2;
+    transform: translateX(0);
+  }
+  /* Hamburger */
+  nav .navlink.active {
+    visibility: visible;
+  }
+  /* Navbar End*/
+  /* Hero */
+  .hero {
+    margin-top: 3vh;
+    flex-direction: column;
+  }
+  .heroContent {
+    width: 100%;
+    text-align: center;
+  }
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  .heroContent p {
+    width: 100%;
+  }
+  .heroIllustraion {
+    width: 75%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* Hero End */
+
+
+  .Itext {
+    margin: 0 7%;
+    line-height: 3vh;
+    font-size: 1rem;
+    text-align: center;
+}
+.intiativeImg {
+  margin-top: 6vh;
+}
+.intiativeImg i{ 
+  font-size: 3rem;
+}
+  
+  /* Message By Founder  */
+  .message {
+    width: 100%;
+    height: 68vh;
+    margin: 0vh 0vw;
+    flex-direction: column-reverse;
+  }
+  .messageContainer{
+    padding-top: 10vw;
+    padding-bottom: 15vw;
+  }
+  .messageContent {
+    width: 100%;
+    padding: 2vh 5vw;
+    text-align: center;
+  }
+  .messageImage {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .messageImage img {
+    width: 50%;
+}
+  .messageContent h1 {
+    margin-bottom: 2vh;
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--color3);
+  }
+  .messageContent p {
+    line-height: 2.5vh;
+  }
+  .messageContent h5 {
+    font-size: 1.2rem;
+  }
+
+  /* Message bY Founder End */
+  /* footer */
+  footer {
+    width: 70%;
+    gap: 3vh;
+    margin-top: 2.5vh;
+  }
+  .footer a{
+    margin-bottom: 0.2vh;
+  }
+  .LinkContainer {
+    width: 50%;
+    margin-bottom: 1vh;
+  }
+  footer .footerMid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footerBottom .social {
+    gap: 6vw;
+  }
+  /* footer End*/
+}

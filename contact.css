@@ -1,0 +1,109 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+  }
+  .contact-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 38vw;
+  }
+  .contact-input input {
+    background-color: transparent;
+    border: 2px solid var(--color3);
+    color: var(--color2);
+    border-radius: 7px;
+    height: 6vh;
+    font-size: 1rem;
+    padding: 0 2vh;
+  }
+  .contact-input input::placeholder {
+    color: var(--color2);
+  }
+  .contact-input input:focus {
+    border-color: var(--color2);
+  }
+  .contact-input textarea {
+    background-color: transparent;
+    border: 2px solid var(--color3);
+    color: var(--color2);
+    border-radius: 10px;
+    width: 37vw;
+    font-size: 1rem;
+    padding: 2vh;
+  }
+  .contact-input textarea::placeholder {
+    color: var(--color2);
+  }
+  .contact-input input:nth-child(1) {
+    width: 18vw;
+  }
+  .contact-input input:nth-child(2) {
+    width: 18vw;
+  }
+  .contact-input input:nth-child(3) {
+    width: 18vw;
+  }
+  .contact-input input:nth-child(4) {
+    width: 18vw;
+  }
+  .contact-input input:nth-child(5) {
+    width: 36vw;
+    height: 20vh;
+  }
+  .button-box{
+    margin-top: 5vh;
+  }
+  .button-box a{
+    padding: 1.8vh 7vw;
+  }
+  @media (max-width:900px){
+    /* Contact */
+  .contact-input {
+    width: 100%;
+    gap: 1vh;
+  }
+  .contact-input input:nth-child(1) {
+    width: 80%;
+  }
+  .contact-input input:nth-child(2) {
+    width: 80%;
+  }
+  .contact-input input:nth-child(3) {
+    width: 80%;
+  }
+  .contact-input input:nth-child(4) {
+    width: 80%;
+  }
+  .contact-input textarea {
+    width: 80%;
+  }
+  /* Contact */
+  }
+  @media (min-width:950px) and (max-width: 1150px){
+    
+      /* Contact */
+  .contact-input {
+    width: 100%;
+    gap: 1vh;
+  }
+  .contact-input input:nth-child(1) {
+    width: 50%;
+  }
+  .contact-input input:nth-child(2) {
+    width: 50%;
+  }
+  .contact-input input:nth-child(3) {
+    width: 50%;
+  }
+  .contact-input input:nth-child(4) {
+    width: 50%;
+  }
+  .contact-input textarea {
+    width: 50%;
+  }
+  }

@@ -25,6 +25,7 @@ closeBtn.addEventListener("click", () => {
   navLink.classList.remove("active");
 });
 
+// Preloader
 const preloader = document.getElementById("preloader")
 window.addEventListener("load",function(){
   preloader.style.display = "none"

@@ -55,11 +55,15 @@
     width: 36vw;
     height: 20vh;
   }
-  .button-box{
+  #submit{
     margin-top: 5vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    transition: 0.7s;
   }
-  .button-box a{
-    padding: 1.8vh 7vw;
+  #submit:hover{
+    background-color: var(--color3)!important;
+    cursor: pointer;
   }
   @media (max-width:900px){
     /* Contact */

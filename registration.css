@@ -1,101 +1,112 @@
 .wrapper {
-    position: relative;
-    max-width: 430px;
-    min-height: 28rem;
-    margin-top: 10vh 0;
-    width: 100%;
-    background: #fff;
-    padding: 34px;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 430px;
+  min-height: 28rem;
+  margin-top: 10vh 0;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   align-items: center;
-
 }
-  .wrapper h2 {
-    position: relative;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
+.wrapper h2 {
+  position: relative;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.5vh;
+  width: 1.8vw;
+  margin-top: 1vh;
+  border-radius: 12px;
+  background: var(--color3);
+}
+.wrapper form {
+  margin-top: 30px;
+}
+.wrapper form .input-box {
+  height: 7vh;
+  margin: 2vh 0;
+}
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 1vw;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color1);
+  border: 1.5px solid #c7bebe;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid {
+  border-color: var(--color3);
+}
+form .policy {
+  display: flex;
+  justify-content: start;
+  gap: 0.7vw;
+  align-items: center;
+  margin-left: 0.2vw;
+}
+form .policy h3 {
+  margin-top: 0.5vh;
+}
+form h3 {
+  color: #707070;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+.input-box.button input {
+  color: #fff;
+  height: 5vh;
+  letter-spacing: 1px;
+  border: none;
+  background-color: var(--color3);
+  cursor: pointer;
+}
+.input-box.button input:hover {
+  /* background-color: var(--color3); */
+  border: 1.5px solid #c7bebe;
+  border-bottom-width: 2.5px;
+}
+form .text h3 {
+  color: var(--color1);
+  width: 100%;
+  text-align: center;
+}
+form .text h3 a {
+  color: var(--color3);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1024px) {
+  .navLinks {
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 29rem;
   }
   .wrapper h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0.5vh;
-    width: 1.8vw;
-    border-radius: 12px;
-    background: var(--color3);
+    width: 6.8vw;
+    margin-top: 1vh;
   }
-  .wrapper form {
-    margin-top: 30px;
+}
+@media screen and (max-width: 400px) {
+  .wrapper h2::before {
+    width: 6.8vw;
+    margin-top: 1vh;
   }
-  .wrapper form .input-box {
-    height: 7vh;
-    margin: 2vh 0;
-  }
-  form .input-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    padding: 0 1vw;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color1);
-    border: 1.5px solid #c7bebe;
-    border-bottom-width: 2.5px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-  }
-  .input-box input:focus,
-  .input-box input:valid {
-    border-color: var(--color3);
-  }
-  form .policy {
-    display: flex;
-    justify-content: start;
-    gap: 0.7vw;
-    align-items: center;
-    margin-left: 0.2vw;
-  }
-  form .policy h3{
-    margin-top: 0.5vh;
-  }
-  form h3 {
-    color: #707070;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-align: center;
-  }
-  .input-box.button input {
-    color: #fff;
-    height: 5vh;
-    letter-spacing: 1px;
-    border: none;
-    background-color: var(--color3);
-    cursor: pointer;
-  }
-  .input-box.button input:hover {
-    /* background-color: var(--color3); */
-    border: 1.5px solid #c7bebe;
-    border-bottom-width: 2.5px;
-  }
-  form .text h3 {
-    color: var(--color1);
-    width: 100%;
-    text-align: center;
-  }
-  form .text h3 a {
-    color: var(--color3);
-    text-decoration: none;
-  }
-  
-  @media screen and (min-width: 481px) and (max-width: 1024px) {
-    .navLinks{
-      align-items: center;
-    }
-   
-    .wrapper {
-      height: 29rem;
-    }}
+}

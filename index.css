@@ -13,6 +13,13 @@
     --text-style2: 'Poppins', sans-serif; */
 }
 /* Utilities */
+#preloader{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  background: black url("./Image/preloader2.gif") no-repeat center ;
+}
 .myContainer {
   padding: 0 5vw;
   background-color: var(--color1);
@@ -275,7 +282,7 @@ nav .logo {
 
 /* Footer */
 .footer {
-  min-height: 70vh;
+  min-height: 72vh;
   background-color: var(--color1);
 }
 footer {
@@ -289,7 +296,7 @@ footer {
 
 .footerTop h3 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--color2);
 }
 .footerTop p {

@@ -19,6 +19,7 @@
   width: 100%;
   z-index: 100;
   background: black url("./Image/preloader2.gif") no-repeat center ;
+  background-size: 50vh;
 }
 .myContainer {
   padding: 0 5vw;

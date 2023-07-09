@@ -23,7 +23,8 @@
     transition: 0.7s;
 }
   .blog_post:hover{
-    background-color: var(--color3);
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+  
   }
   
 

@@ -88,7 +88,7 @@ p {
     border-radius: 25px;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    min-width: 300px;
+    min-width: 320px;
     transition: 0.5s;
     background-color: white;
     transition: 1s;
@@ -100,8 +100,15 @@ p {
     flex-wrap: wrap;
     gap: 2vw;
     row-gap: 5vh;
-    
 }   
+@media  (min-width:1100px) and (max-width: 1530px){
+  .team h1{
+    margin-top: 10vh;
+  }
+  .teamcardContainer{
+    padding: 0% 10% 3.5% 10%;
+  }
+}
 .teamcard:hover{
     transform: scale3d(0.95,0.95,0.95);
     background: linear-gradient(90deg, #ff9966, #ff5e62);
@@ -166,5 +173,11 @@ p {
   }
   .visionContainer {
     padding-bottom: 10vh;
+  }
+  .team h1{
+    margin-top: 10vh;
+  }
+  .teamcardContainer{
+    padding-bottom: 10%;
   }
 }

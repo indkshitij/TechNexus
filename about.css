@@ -70,8 +70,79 @@ p {
   line-height: 1.45;
   color: #333;
 }
+/* Team CArd */
+.team{
+    min-height: 100vh;
+}
+.team h1{
+    font-size: 3.5rem;
+    margin-bottom: 7vh;
+}
+.teamcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    border-radius: 25px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    min-width: 300px;
+    transition: 0.5s;
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.teamcardContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2vw;
+    row-gap: 5vh;
+    
+}   
+.teamcard:hover{
+    transform: scale3d(0.95,0.95,0.95);
+}
+.teamcard h3{
+    font-size: 2rem;
+    margin-bottom: 1vh;
+    color: var(--color1);
+}
 
+.teamcard p{
+    font-size: 1.2rem;
+    color: var(--color1);
+}
 
+.teamcard img{
+    width: 25vh;
+    margin-bottom: 2.5vh;
+    border-radius: 100%;
+    /* border: 1.5px solid var(--color1); */
+}
+.teamsocial{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+.teamsocial i{
+    color: var(--color1);
+    transition: 0.5s;
+}
+.teamsocial .twitter i:hover{
+    transform:translateY(-2vh);
+    color: #1DA1F2;
+}.teamsocial .git i:hover{
+    transform:translateY(-2vh);
+    color: grey;
+}.teamsocial .linkedin i:hover{
+    transform:translateY(-2vh);
+    color: #1DA1F2;
+}
 @media  (max-width: 900px) {
   body {
     background-color: black;

@@ -91,7 +91,7 @@ p {
     min-width: 300px;
     transition: 0.5s;
     background-color: white;
-    transition: 0.5s;
+    transition: 1s;
     cursor: pointer;
 }
 .teamcardContainer{
@@ -104,6 +104,8 @@ p {
 }   
 .teamcard:hover{
     transform: scale3d(0.95,0.95,0.95);
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+  
 }
 .teamcard h3{
     font-size: 2rem;
